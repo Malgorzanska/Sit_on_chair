@@ -1,0 +1,570 @@
+* {
+    font-family: 'ralewayregular', Tahoma, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../fonts/raleway-thin-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+                            /* Header */
+header {
+    background-color: black;
+    line-height: 40px;
+}
+div.container {
+    max-width: 1056px;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+    height: 40px;
+}
+        /* Header - logo */
+.logo {
+    float:left;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 30%;
+}
+.greenText {
+    color:#37d6b3;
+}
+        /* Header - navigation */
+
+#main_navigation {
+    list-style: none;
+}
+#main_navigation > li:nth-of-type(2) > ul {
+    background-color: black;
+    color: white;
+    padding: 0 10px;
+    font-size: 15px;
+    list-style: none;
+}
+nav.header_menu {
+    font-weight: bold;
+    float: right;
+    font-size: 16px;
+    height: 40px;
+    display: block;
+    width: 30%;
+    color: white;
+}
+.clearfix {
+    display:block;
+    content: "";
+    clear:both;
+}
+.header_menu ul {
+    display: flex;
+}
+.outer_element_list {
+    font-weight: bold;
+    position: relative;
+    list-style: none;
+    padding-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li.header__menu-list {
+    display: block;
+    font-weight: 700;
+    padding: 0 20px 0 20px;
+    position: relative;
+}
+.header__submenu {
+    position: absolute;
+    visibility: hidden;
+    max-width: 100px;
+    background-color: #000;
+    left: 5px;
+    top: 50px;
+    line-height: 26px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+li.header__menu-list:hover .header__submenu{
+    visibility: visible;
+    display: block;
+}
+li.header__menu-list:hover{
+    background-color: #37d6b3;
+}
+
+.header__submenu > li {
+    padding: 0 10px;
+    font-size: 15px;
+}
+
+                                                    /* Section 1 - slider */
+.background {
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+48,dbdce2+97,dbdce2+101 */
+    background: #f5f6f6; /* Old browsers */
+    background: -moz-linear-gradient(top, #f5f6f6 48%, #dbdce2 97%, #dbdce2 101%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f5f6f6 48%,#dbdce2 97%,#dbdce2 101%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f5f6f6 48%,#dbdce2 97%,#dbdce2 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#dbdce2',GradientType=0 ); /* IE6-9 */
+}
+section.container {
+    display: flex;
+    height: 92vh;
+    max-width: 1056px;
+    margin: 0 auto;
+    position: relative;
+    /*border: 1px solid red;*/
+}
+        /* arrows*/
+.slider_arrow {
+    position: absolute;
+    color:#37d6b3;
+    font-size: 70px;
+}
+div.left {
+    top: 200px;
+}
+div.right {
+    top: 200px;
+    left: 1021px;
+}
+/* slider */
+.slider_img ul{
+    list-style: none;
+}
+.slider_img li{
+    display: none;
+}
+.slider_img .visible{
+    display: inline-block;
+}
+.slider_img {
+    margin-top:70px;
+    width: 50%;
+    height: 50%;
+}
+.slider_img img {
+  width: 470px;
+  height: 337px;
+}
+        /* text + button*/
+.right_side h2 {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 0 25px 25px;
+    max-width: 420px;
+    margin-top: 65px;
+}
+.right_side p {
+    text-align: center;
+    font-size: 14px;
+    max-width: 380px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+.right_side {
+    width: 60%;
+    padding: 60px;
+}
+button {
+    width: 200px;
+    height: 40px;
+    background-color: #37d6b3;
+    border: 1px solid #37d6b3;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+                                                        /* SECTION 2 - gallery*/
+.container.fotos {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.chair_options {
+    margin: 20px 20px 50px 0;
+}
+.chair_pic {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+article.chair_options {
+    border: 1px solid grey ;
+    width: 33.333%;
+    padding: 25px;
+}
+article h2 {
+    font-size: 16px;
+}
+article.chair_options p {
+    font-size: 14px;
+    padding-top: 15px;
+}
+.chair_options.clair, .chair_options.margarita{
+    width: 33.333%;
+}
+img.chair_pic {
+    position: relative;
+}
+.absoluteBox {
+    position: absolute;
+    bottom: 70px;
+    background-color: rgba(250, 255, 255, 0.4);
+    width: 33.333%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+div.margarita .chair_line, div.clair .chair_line {
+    position: absolute;
+    top: 45px;
+}
+.chair_line, .price_line {
+    border: 4px solid #37d6b3;
+    width: 150px;
+    position: absolute;
+}
+.chair_text {
+    font-weight: bold;
+}
+                          /*section 3 - price section*/
+.price {
+    background-color: #e3e5e8;
+    height: 120vh;
+}
+.price_text {
+    color: #515459;
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.price_line {
+    border: 4px solid #37d6b3;
+    width: 26%;
+}
+        /*first column - basic plan*/
+.price_col {
+    background-color: #f7f8f9;
+    float:left;
+    width: 32%;
+    height: 500px;
+    margin: 85px 10px 0 0;
+    border: 1px solid #828a91;
+    position: relative;
+}
+.price_col-h1 {
+    color:#37d6b3;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+}
+.price_col-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #828a91;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    top: -38px;
+}
+.price_col-dot {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #828a91;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+.price_col-click {
+    position:absolute;
+    top: 470px;
+    right: -55px;
+}
+.price_col-button {
+    background-color:#37d6b3;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #37d6b3;
+    padding: 5px;
+    width: 150px;
+    font-weight: lighter;
+}
+.price_col-month {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #828a91;
+    border-radius: 50%;
+    left:50%;
+    margin-left: -65px;
+    top: 15%;
+}
+.price_month-h1 {
+    position: absolute;
+    font-weight: bold;
+    color: #828a91;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: -45px;
+    margin-left: -30px;
+}
+.price_month-h3 {
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #828a91;
+    top: 20%;
+    left: 80%;
+    margin-left: -10px;
+}
+.price_month-h2 {
+    position: absolute;
+    font-size: 15px;
+    font-weight: bold;
+    color: #828a91;
+    left: 23%;
+    top: 65%;
+}
+.price_col-p1 {
+    position: absolute;
+    width: calc(100% - 2px);
+    left: 1px;
+    background-color: #E3E0E0;
+    font-size: 22px;
+    margin: 0 0 0 0;
+    color: #A1A1A1;
+    text-align: center;
+    line-height: 40px;
+    top: 47%;
+}
+.price_col-p2 {
+    position: absolute;
+    width: calc(100% - 2px);
+    left: 1px;
+    background-color: #efefef;
+    font-size: 22px;
+    margin: 0 0 0 0;
+    color: #A1A1A1;
+    text-align: center;
+    line-height: 40px;
+    top: 55%;
+}
+        /*second column - standard plan*/
+.second_part {
+    background-color: #37d6b3;
+}
+p.color {
+    position: absolute;
+    width: calc(100% - 2px);
+    left: 1px;
+    background-color: white;
+}
+.click-second {
+    background-color: white;
+    color: #37d6b3;
+}
+.second_part .price_col-h1 {
+    color: white;
+}
+.price_col-p3 {
+    position: absolute;
+    width: calc(100% - 2px);
+    left: 1px;
+    background-color: white;
+    font-size: 22px;
+    margin: 0 0 0 0;
+    color: #A1A1A1;
+    text-align: center;
+    line-height: 40px;
+    top: 63%;
+}
+.second_part .price_col-dot {
+    background-color: white;
+}
+.second_part .price_col-month h1,.second_part .price_col-month h2,.second_part .price_col-month h3 {
+    color:#37d6b3;
+}
+.second_part, .second_part .price_col-circle, .second_part .price_col-month {
+    border: 1px solid #37d6b3;
+}
+.second_part .price_col-circle {
+    background-color: #37d6b3;
+}
+        /* third column - advanced plan*/
+.third_part .price_col-p4 {
+    position: absolute;
+    width: calc(100% - 2px);
+    left: 1px;
+    background-color: #efefef;
+    font-size: 22px;
+    margin: 0 0 0 0;
+    color: #A1A1A1;
+    text-align: center;
+    line-height: 40px;
+    top: 71%;
+}
+.third_part p.price_col-p3 {
+    background-color: #E3E0E0;
+}
+.h1-left {
+    margin-left: -40px;
+}
+                                    /*section 4 - form*/
+#form {
+    height: 90vh;
+}
+#form .form_header {
+    background-color: white;
+    color: #515459;
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+}
+#form .form_line {
+    border: 4px solid #37d6b3;
+    width: 31%;
+    margin-bottom: 30px;
+}
+.form_text {
+    width: 640px;
+    float: left;
+}
+div.form_text input {
+    width: 620px;
+    line-height: 40px;
+    font-size: 20px;
+    padding-left: 5px;
+    border: 1px solid #37d6b3;
+}
+input#firstname {
+    margin: 40px 0 20px 0;
+}
+input#email {
+    margin: 0 0 20px 0;
+}
+textarea {
+    width: 620px;
+    height: 190px;
+    border: 1px solid #37d6b3;
+    resize: none;
+    padding-left: 5px;
+    font-size: 20px;
+}
+.form_agree {
+    float: left;
+    width: 400px;
+}
+.form_agree img {
+    padding: 60px 0 0 60px;
+    width: 60%;
+    height: 60%;
+}
+.form_agree-button {
+    max-width: 300px;
+    color: #B8B8B8;
+    margin: 20px 0 0 45px;
+    font-size: 16px;
+}
+.form_button {
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #00C0AC;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0 5px 0;
+    position:absolute;
+    left: 750px;
+    top: 1950px;
+}
+#form .checkbox {
+    border: 1px solid grey;
+    padding:0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 480px;
+}
+.positionBox {
+    position: relative;
+}
+
+/**********footer**********/
+footer {
+    height: 100px;
+}
+footer .flexBox {
+    display: flex;
+}
+
+.footer_p {
+    font-size: 16px;
+    width: 60%;
+    color: #A1A1A1;
+    margin: 19px 35px 0 0;
+}
+.footer_media {
+    max-width: 380px;
+    width: 25%;
+    padding-top: 5px;
+}
+h1.footer_logo {
+    width: 15%;
+    font-size: 18px;
+    font-weight: 700;
+    color:#A1A1A1;
+    padding-top: 15px;
+    margin: 4px 0 0 72px;
+}
+h1.footer_logo span {
+    color:rgba(80, 80, 80, 0.9);
+    font-weight: 700;
+}
+.footer_media img {
+    width: 30px;
+    height: 30px;
+}
